@@ -1,0 +1,8 @@
+<svg width="300" height="80" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px 'Raleway', sans-serif; fill: white; }
+    .subtitle { font: 16px 'Raleway', sans-serif; fill: white; }
+  </style>
+  <text x="10" y="30" class="title">ethical capital</text>
+  <text x="10" y="55" class="subtitle">INVESTMENT COLLABORATIVE</text>
+</svg> 
