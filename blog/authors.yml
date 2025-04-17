@@ -1,0 +1,21 @@
+sloane_ortel:
+  name: Sloane Ortel
+  description: Founder and Chief Investment Officer at Ethical Capital
+  avatar: ../assets/images/Sloane_ortel_headshot.png
+  url: /blog/authors/sloane_ortel/
+  email: sloane@ethicic.com
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/sloane-ortel
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/sloaneortel
+
+clarissa_bushman:
+  name: Clarissa Bushman
+  description: Sloane's mom. A formerly alive person who was an AP Economics teacher, Bond Trader, and good hugger.
+  avatar: ../assets/images/clarissa_bushman_headshot.png
+
+gabe_ahmed:
+  name: Gabe Ahmed
+  description: Former Investment Research Associate at Ethical Capital
+  avatar: ../assets/images/placeholder-avatar.png 

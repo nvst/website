@@ -1,0 +1,132 @@
+/* Footer customization */
+.md-footer {
+  background-color: #4b257c; /* Purple background color */
+  color: white;
+  padding: 2rem 0;
+}
+
+.md-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.md-footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.md-footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.md-footer-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.md-footer-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.md-footer-nav__item {
+  margin-bottom: 0.5rem;
+}
+
+.md-footer-nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.md-footer-nav__link:hover {
+  text-decoration: underline;
+}
+
+.md-footer-nav__parent {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.md-footer-nav__sublist {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.md-footer-contact p {
+  margin: 0.5rem 0;
+}
+
+.md-footer-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #4b257c;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.md-footer-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.md-footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-footer-logo__link {
+  display: block;
+}
+
+.md-footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.md-footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.md-footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.md-footer-link:hover {
+  text-decoration: underline;
+}
+
+.md-footer-copyright {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .md-footer-row {
+    flex-direction: column;
+  }
+  
+  .md-footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+  }
+} 

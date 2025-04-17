@@ -1,0 +1,26 @@
+---
+# Authors file for the Knowledge Center
+# All authors should be listed here
+---
+
+sloane:
+  name: Sloane Ahmed
+  title: "Founder & Chief Investment Officer"
+  bio: >
+    Sloane combines expertise in portfolio management and ethical research to lead Ethical Capital's
+    investment strategy.
+  avatar: sloane-ahmed.jpg
+
+nate:
+  name: Nate Thompson
+  title: "Director of Research"
+  bio: >
+    Nate leads our research team, focusing on finding companies that align economic value with positive impact.
+  avatar: nate-thompson.jpg
+
+team:
+  name: Ethical Capital Team
+  title: "Combined expertise"
+  bio: >
+    Articles written collaboratively by the Ethical Capital team.
+  avatar: team-avatar.jpg 

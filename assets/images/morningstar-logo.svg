@@ -1,0 +1,5 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="60" fill="#ffffff"/>
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#D12127">MORNINGSTAR</text>
+  <path d="M100 15 L105 25 L116 27 L108 35 L110 46 L100 40 L90 46 L92 35 L84 27 L95 25 Z" fill="#FFBB00" stroke="#D12127" stroke-width="1"/>
+</svg> 
