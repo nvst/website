@@ -257,4 +257,24 @@
 [data-md-color-scheme="slate"] .review-badge.pending {
   background-color: #444;
   color: #ddd;
+}
+
+/* Hide archive-related elements */
+.md-sidebar a[href$="archive/"],
+.md-sidebar a[href*="/archive/"],
+.md-sidebar--secondary a[href*="/archive/"],
+a[href*="/archive/"] {
+    display: none !important;
+}
+
+/* Hide any archive sections in the navigation */
+.md-nav__item:has(a[href*="/archive/"]) {
+    display: none !important;
+}
+
+/* Hide the blog archive section */
+section:has(> h2:contains("Archive")),
+h2:contains("Archive"),
+div:has(> h2:contains("Archive")) {
+    display: none !important;
 } 
