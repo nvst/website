@@ -6,6 +6,14 @@
   --ec-purple: #5d3b8b;
   --ec-purple-light: #7951a8;
   --ec-purple-dark: #452b68;
+  
+  /* Add new colors for better contrast and readability */
+  --ec-light-bg: #f8f9fa;
+  --ec-dark-bg: #1c1c22;
+  --ec-light-text: #f5f5f7;
+  --ec-dark-text: #2c2c2c;
+  --ec-grid-border-light: rgba(0, 0, 0, 0.12);
+  --ec-grid-border-dark: rgba(255, 255, 255, 0.12);
 }
 
 /* Override Material theme colors with our custom purple */
@@ -41,33 +49,111 @@
   margin: 0.2rem 0;
 }
 
-/* Custom grid styling */
+/* Improved grid styling for better readability */
 .grid-container {
   margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1.5rem;
 }
 
 .grid-item {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Light mode grid styling */
+[data-md-color-scheme="default"] .grid-item {
+  background-color: white;
+  border: 1px solid var(--ec-grid-border-light);
+  color: var(--ec-dark-text);
+}
+
+/* Dark mode grid styling */
+[data-md-color-scheme="slate"] .grid-item {
+  background-color: #2a2a33;
+  border: 1px solid var(--ec-grid-border-dark);
+  color: var(--ec-light-text);
 }
 
 .grid-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid headers styling */
+.grid-item h2, .grid-item h3 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="default"] .grid-item h2, 
+[data-md-color-scheme="default"] .grid-item h3 {
+  color: var(--ec-purple);
+}
+
+[data-md-color-scheme="slate"] .grid-item h2, 
+[data-md-color-scheme="slate"] .grid-item h3 {
+  color: var(--ec-purple-light);
+}
+
+/* List styling inside grids for better readability */
+.grid-item ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.grid-item li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+[data-md-color-scheme="slate"] .grid-item li {
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /* Performance tables */
 .performance-table table {
   font-size: 0.9rem;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .performance-table th {
   background-color: #f5f5f5;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+[data-md-color-scheme="slate"] .performance-table th {
+  background-color: #3a3a45;
+  color: var(--ec-light-text);
+}
+
+.performance-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+[data-md-color-scheme="slate"] .performance-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 /* Custom titles for How We Invest section */
 .md-typeset h1, .md-typeset h2 {
   font-weight: 700;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1, 
+[data-md-color-scheme="default"] .md-typeset h2 {
   color: var(--ec-purple-dark);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1, 
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: var(--ec-purple-light);
 }
 
 /* Improve readability */
@@ -84,6 +170,10 @@
   .md-sidebar--primary {
     border-right: 1px solid rgba(0, 0, 0, 0.07);
   }
+  
+  [data-md-color-scheme="slate"] .md-sidebar--primary {
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+  }
 }
 
 /* Custom styles for disclaimer text */
@@ -92,4 +182,79 @@
   padding: 10px;
   border-left: 3px solid #ddd;
   margin: 1rem 0;
+}
+
+[data-md-color-scheme="slate"] .disclaimer {
+  background-color: #2a2a33;
+  border-left: 3px solid #444;
+  color: var(--ec-light-text);
+}
+
+/* Custom styles for four verticals section */
+.four-verticals {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .four-verticals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Grid items in four verticals section */
+.four-verticals .grid-item h3 {
+  margin-top: 0;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 2px solid;
+}
+
+[data-md-color-scheme="default"] .four-verticals .grid-item h3 {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] .four-verticals .grid-item h3 {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.four-verticals .grid-item p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+[data-md-color-scheme="default"] .four-verticals .grid-item p {
+  color: #555;
+}
+
+[data-md-color-scheme="slate"] .four-verticals .grid-item p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Review status badges */
+.review-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.review-badge.reviewed {
+  background-color: var(--ec-purple-light);
+  color: white;
+}
+
+.review-badge.pending {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+[data-md-color-scheme="slate"] .review-badge.pending {
+  background-color: #444;
+  color: #ddd;
 } 
